@@ -10,7 +10,7 @@ public class Funcionario {
         this.nome = nome;
         this.numeroDeRegistro = numeroDeRegistro;
     }
-
+//*teste para o comite
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
