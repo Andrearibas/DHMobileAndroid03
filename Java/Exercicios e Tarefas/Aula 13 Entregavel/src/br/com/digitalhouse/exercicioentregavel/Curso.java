@@ -31,6 +31,10 @@ public class Curso {
 
     }
 
+    @Override
+    public String toString() {
+        return "Curso "+ nomeCurso + ", de codigo: " + codigoCurso;
+    }
 
     @Override
     public boolean equals(Object o) {

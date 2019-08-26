@@ -1,5 +1,6 @@
 package br.com.digitalhouse.exercicioentregavel;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -19,12 +20,14 @@ public class DigitalHouseManager {
 
         listaDeCursos.put(novoCurso.getCodigoCurso(),novoCurso);
 
-        System.out.println("O curso "+nome+" foi criado e adicionado na lista. ");
+        System.out.println("Curso "+nome+", criado e adicionado na lista. ");
+        System.out.println("******************************************");
     }
 
     public void excluirCurso(Integer codigoCurso){
         listaDeCursos.remove(listaDeCursos.get(codigoCurso));
-        System.out.println("O curso de codigo "+codigoCurso+" foi excluido da lista.");
+        System.out.println("Curso de codigo: "+codigoCurso+", excluido da lista.");
+        System.out.println("******************************************");
     }
 
     public void registrarProfessorAdjunto(String novoNomeProfAdjunto, String novoSobrenomeProfAdjunto, Integer novoCodProfAdjunto, Integer qtdHoras){
@@ -37,7 +40,8 @@ public class DigitalHouseManager {
 
         listaDeProfessores.put(novoProfAdjunto.getCodigoProfessor(),novoProfAdjunto);
 
-        System.out.println("O novo Professor Adjunto, "+novoNomeProfAdjunto+" "+novoSobrenomeProfAdjunto+" foi registradp e adicionado na lista de professores.");
+        System.out.println("Professor(a) Adjunto "+novoNomeProfAdjunto+" "+novoSobrenomeProfAdjunto+", foi registradp(a) e adicionado(a) na lista de professores.");
+        System.out.println("******************************************");
 
     }
 
@@ -51,26 +55,51 @@ public class DigitalHouseManager {
 
         listaDeProfessores.put(novoProfTitular.getCodigoProfessor(),novoProfTitular);
 
-        System.out.println("O novo Professor Titular, "+novoNomeProfTitular+" "+novoSobrenomeProfTitular+" foi registrado e adicionado na lista de professores.");
+        System.out.println("Professor(a) Titular "+novoNomeProfTitular+" "+novoSobrenomeProfTitular+", foi registrado(a) e adicionado(a) na lista de professores.");
+        System.out.println("******************************************");
     }
 
     public void excluirProfessor(Integer codigoProfessor){
         listaDeProfessores.remove(codigoProfessor);
-        System.out.println("O professor de codigo: "+codigoProfessor+",foi excluido da lista.");
+        System.out.println("Professor(a) de codigo: "+codigoProfessor+",foi excluido(a) da lista.");
+        System.out.println("******************************************");
     }
 
     public void registrarAluno(String novoNomeAluno, String novoSobrenomeAluno, Integer codigoAluno){
         Aluno novoAluno = new Aluno(novoNomeAluno,novoSobrenomeAluno, codigoAluno);
         listaDeAlunos.put(novoAluno.getCodigoAluno(),novoAluno);
-        System.out.println("Aluno "+novoNomeAluno+" "+novoSobrenomeAluno+", registrado e adicionado a lista de Alunos com sucesso.");
+        System.out.println("Aluno "+novoNomeAluno+" "+novoSobrenomeAluno+", registrado e adicionado na lista de Alunos.");
+        System.out.println("******************************************");
 
     }
 
     public void matricularAluno(Integer codigoAluno, Integer codigoCurso){
        Curso curso = listaDeCursos.get(codigoCurso);
        Aluno aluno = listaDeAlunos.get(codigoAluno);
+       Date data = new Date();
 
-       curso.adicionarUmAluno(aluno);
+       if (curso.adicionarUmAluno(aluno)){
+           Matricula novaMatricula = new Matricula(aluno,curso,data);
+           listaDeMatriculas.put(aluno.getCodigoAluno(),novaMatricula);
+           System.out.println("O Aluno(a) "+aluno.getNome()+", foi matriculado(a) no curso de "+curso.getNomeCurso()+".");
+           System.out.println("******************************************");
+       }else {
+           System.out.println("Matricula não pode ser realizada, limite de vagas esgotado.");
+           System.out.println("******************************************");
+       }
+
+    }
+
+    public void alocarProfessores(Integer codigoCurso, Integer codProfTitular, Integer codProfAdjunto){
+        ProfessoresTitulares novoProfTitular = (ProfessoresTitulares) getListaDeProfessores().get(codProfTitular);
+        ProfessoresAjuntos novoProfessoresAjuntos = (ProfessoresAjuntos) getListaDeProfessores().get(codProfAdjunto);
+        Curso curso = listaDeCursos.get(codigoCurso);
+
+        curso.setProfessoresTitulares(novoProfTitular);
+        curso.setProfessoresAjuntos(novoProfessoresAjuntos);
+
+        System.out.println("Professor Titular "+novoProfTitular.getNomeProfessor()+" e Adjunto "+novoProfessoresAjuntos.getNomeProfessor()+", alocado no "+curso.toString()+", com sucesso.");
+        System.out.println("******************************************");
 
     }
 
