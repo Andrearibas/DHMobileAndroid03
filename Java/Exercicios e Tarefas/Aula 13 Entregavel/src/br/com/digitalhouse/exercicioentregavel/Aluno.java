@@ -21,6 +21,10 @@ public class Aluno {
         return codigoAluno.equals(aluno.codigoAluno);
     }
 
+    @Override
+    public String toString() {
+        return "Aluno(a): " + nomeAluno +" "+ sobrenome;
+    }
 
     public String getNome() {
         return nomeAluno;

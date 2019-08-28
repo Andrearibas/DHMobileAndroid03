@@ -13,6 +13,14 @@ public class Matricula {
         this.dataMatricula = dataMatricula;
     }
 
+    @Override
+    public String toString() {
+        return "Aluno " + aluno +
+                ", curso:" + curso +
+                ", dataMatricula=" + dataMatricula +
+                '}';
+    }
+
     public Aluno getAluno() {
         return aluno;
     }
