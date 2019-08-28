@@ -68,7 +68,7 @@ public class DigitalHouseManager {
     public void registrarAluno(String novoNomeAluno, String novoSobrenomeAluno, Integer codigoAluno){
         Aluno novoAluno = new Aluno(novoNomeAluno,novoSobrenomeAluno, codigoAluno);
         listaDeAlunos.put(novoAluno.getCodigoAluno(),novoAluno);
-        System.out.println("Aluno "+novoNomeAluno+" "+novoSobrenomeAluno+", registrado e adicionado na lista de Alunos.");
+        System.out.println("Aluno(a) "+novoNomeAluno+" "+novoSobrenomeAluno+", registrado e adicionado na lista de Alunos.");
         System.out.println("******************************************");
 
     }
@@ -102,6 +102,27 @@ public class DigitalHouseManager {
         System.out.println("******************************************");
 
     }
+
+    public void consultarAluno(Integer codigoAluno){
+        if (listaDeAlunos.containsKey(codigoAluno)){
+            int num = 0;
+
+            for (int i = 0; i<listaDeMatriculas.size();i++){
+
+                if (listaDeMatriculas.get(i).getAluno().getCodigoAluno().equals(codigoAluno)){
+                    System.out.println("Aluno "+listaDeMatriculas.get(i).getAluno().getNome()+"esta matriculado no curso: "+listaDeMatriculas.get(i).getCurso().getNomeCurso());
+                    num = num +1;
+
+                }
+            }if (num ==0){
+                System.out.println("Aluno "+listaDeAlunos.get(codigoAluno).getNome()+" com o codigo "+codigoAluno+" não está matriculado em nenhum curso");
+            }else {
+                System.out.println("Aluno não encontrado no sistema!");
+            }
+        }
+
+    }
+
 
     public Map<Integer, Aluno> getListaDeAlunos() {
         return listaDeAlunos;

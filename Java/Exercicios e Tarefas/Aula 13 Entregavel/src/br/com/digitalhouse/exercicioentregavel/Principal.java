@@ -31,6 +31,8 @@ public class Principal {
         digitalHouseManager.matricularAluno(19876,20002);
         digitalHouseManager.matricularAluno(34567,20002);
 
+        digitalHouseManager.consultarAluno(54321);
+
 
 
 

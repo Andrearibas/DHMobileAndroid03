@@ -1,5 +1,6 @@
 package br.com.digitalhouse.exercicioentregavel;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -9,7 +10,7 @@ public class Curso {
     private ProfessoresTitulares professoresTitulares;
     private ProfessoresAjuntos professoresAjuntos;
     private Integer qtdMaximaAluno;
-    private List<Aluno> listaAlunosMatriculados;
+    private List<Aluno> listaAlunosMatriculados = new ArrayList<>();
 
     public boolean adicionarUmAluno(Aluno umAluno){
 
