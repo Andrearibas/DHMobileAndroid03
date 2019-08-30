@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d8ea762-f293-4e93-9f2a-6a385903e404" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/Aluno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/Curso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/DigitalHouseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/DigitalHouseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/Matricula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/Matricula.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/Principal.java" afterDir="false" />
-    </list>
+    <list default="true" id="6d8ea762-f293-4e93-9f2a-6a385903e404" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/DigitalHouseManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -38,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/Principal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+            <state relative-caret-position="340">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -194,7 +188,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26153848" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -205,7 +198,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22202487" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22202487" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -294,13 +287,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/Principal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/DigitalHouseManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -314,6 +300,13 @@
             <element signature="e#7058#7059#0" expanded="true" />
             <element signature="e#7159#7160#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/Principal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>

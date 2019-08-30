@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/texto_center"
+        android:textColor="@color/colorBranca"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorRosa"
+        android:gravity="left|center"
+        android:text="@string/texto_center_left"
+        android:textColor="@color/colorBranca"
+        android:textSize="21dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAzul"
+        android:gravity="right|bottom"
+        android:text="@string/texto_botom_rigth"
+        android:textColor="@color/colorBranca"
+        android:textSize="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|top"
+            android:layout_weight="1"
+            android:background="@color/colorRosaEscuro"
+            android:gravity="top|center"
+            android:text="@string/Textocentertop"
+            android:textColor="@color/colorBranca" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAzulEscuro"
+            android:gravity="center|bottom"
+            android:text="Texto botom"
+            android:textColor="@color/colorBranca" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/colorBotao"
+        android:text="@string/enviar"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBranca" />
+
+
+
+</LinearLayout>

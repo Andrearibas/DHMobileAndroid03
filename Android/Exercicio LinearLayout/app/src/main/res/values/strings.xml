@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LinearLayout</string>
+    <string name="texto_center">Texto center</string>
+    <string name="texto_center_left">Texto center/left</string>
+    <string name="texto_botom_rigth">Texto botom/rigth</string>
+    <string name="texto_center_top">Texto center/top</string>
+    <string name="enviar">Enviar</string>
+    <string name="Textocentertop">Texto Center Top</string>
+</resources>
