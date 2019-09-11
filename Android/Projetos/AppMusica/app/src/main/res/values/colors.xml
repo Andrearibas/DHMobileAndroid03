@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#F0EBED</color>
+    <color name="corBotaoAdd">#05757A</color>
+    <color name="corBotaoFinalizar">#054E7E</color>
+</resources>
