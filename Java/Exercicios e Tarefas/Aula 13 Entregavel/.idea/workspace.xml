@@ -1,7 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d8ea762-f293-4e93-9f2a-6a385903e404" name="Default Changelist" comment="" />
+    <list default="true" id="6d8ea762-f293-4e93-9f2a-6a385903e404" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/androidTest/java/com/example/healthcontrol/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/java/com/example/healthcontrol/views/Cadastro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/java/com/example/healthcontrol/views/Informacoes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/java/com/example/healthcontrol/views/Resultado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/java/com/example/healthcontrol/views/Splash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/app/src/test/java/com/example/healthcontrol/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/HealthControl/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/androidTest/java/com/example/exerciciocomunicacaofragments/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/java/com/example/exerciciocomunicacaofragments/interfaces/Comunicador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/java/com/example/exerciciocomunicacaofragments/model/SistemaOperacional.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/java/com/example/exerciciocomunicacaofragments/views/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/java/com/example/exerciciocomunicacaofragments/views/PrimeiroFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/java/com/example/exerciciocomunicacaofragments/views/SegundoFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/drawable-v24/cachorro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/drawable-v24/gato.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/layout/fragment_primeiro.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/layout/fragment_segundo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/app/src/test/java/com/example/exerciciocomunicacaofragments/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/ComunicacaoFragments/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/DrawerLayout/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/DrawerLayout/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/DrawerLayout/app/src/main/java/com/example/drawerlayout/GaleriaFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/DrawerLayout/app/src/main/java/com/example/drawerlayout/HomeFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/DrawerLayout/app/src/main/res/layout/fragment_galeria.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Android/Projetos/DrawerLayout/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Android/ComunicacaoFragments/app/src/main/java/com/example/comunicacaofragments/interfaces/Comunicador.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Android/ComunicacaoFragments/app/src/main/java/com/example/comunicacaofragments/interfaces/Comunicador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Android/ComunicacaoFragments/app/src/main/java/com/example/comunicacaofragments/model/SistemaOperacional.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Android/ComunicacaoFragments/app/src/main/java/com/example/comunicacaofragments/model/SistemaOperacional.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Android/ComunicacaoFragments/app/src/main/java/com/example/comunicacaofragments/views/PrimeiroFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Android/ComunicacaoFragments/app/src/main/java/com/example/comunicacaofragments/views/PrimeiroFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Android/ComunicacaoFragments/app/src/main/java/com/example/comunicacaofragments/views/SegundoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Android/ComunicacaoFragments/app/src/main/java/com/example/comunicacaofragments/views/SegundoFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Android/ComunicacaoFragments/app/src/main/res/layout/fragment_primeiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Android/ComunicacaoFragments/app/src/main/res/layout/fragment_primeiro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Android/ComunicacaoFragments/app/src/main/res/layout/fragment_segundo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Android/ComunicacaoFragments/app/src/main/res/layout/fragment_segundo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Android/MyApplication/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Android/MyApplication/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Android/Projetos/Intent Bundle AGENDA/app/src/main/res/layout/activity_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Android/Projetos/Intent Bundle AGENDA/app/src/main/res/layout/activity_home.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,15 +119,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/DigitalHouseManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="2091">
               <caret line="126" column="59" selection-start-line="126" selection-start-column="59" selection-end-line="126" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#6443#6444#0" expanded="true" />
                 <element signature="e#6479#6480#0" expanded="true" />
+                <element signature="e#6550#6551#0" expanded="true" />
                 <element signature="e#6600#6601#0" expanded="true" />
+                <element signature="e#6662#6663#0" expanded="true" />
                 <element signature="e#6703#6704#0" expanded="true" />
+                <element signature="e#6901#6902#0" expanded="true" />
                 <element signature="e#6937#6938#0" expanded="true" />
+                <element signature="e#7008#7009#0" expanded="true" />
                 <element signature="e#7058#7059#0" expanded="true" />
+                <element signature="e#7119#7120#0" expanded="true" />
                 <element signature="e#7159#7160#0" expanded="true" />
               </folding>
             </state>
@@ -36,7 +144,7 @@
         <entry file="file://$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/Principal.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -87,6 +195,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -133,8 +243,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -189,7 +297,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26153848" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26639676" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -289,15 +397,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/DigitalHouseManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="2091">
           <caret line="126" column="59" selection-start-line="126" selection-start-column="59" selection-end-line="126" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#6443#6444#0" expanded="true" />
             <element signature="e#6479#6480#0" expanded="true" />
+            <element signature="e#6550#6551#0" expanded="true" />
             <element signature="e#6600#6601#0" expanded="true" />
+            <element signature="e#6662#6663#0" expanded="true" />
             <element signature="e#6703#6704#0" expanded="true" />
+            <element signature="e#6901#6902#0" expanded="true" />
             <element signature="e#6937#6938#0" expanded="true" />
+            <element signature="e#7008#7009#0" expanded="true" />
             <element signature="e#7058#7059#0" expanded="true" />
+            <element signature="e#7119#7120#0" expanded="true" />
             <element signature="e#7159#7160#0" expanded="true" />
           </folding>
         </state>
@@ -306,7 +420,7 @@
     <entry file="file://$PROJECT_DIR$/src/br/com/digitalhouse/exercicioentregavel/Principal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>

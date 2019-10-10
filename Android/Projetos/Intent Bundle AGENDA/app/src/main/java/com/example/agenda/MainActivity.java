@@ -1,10 +1,14 @@
 package com.example.agenda;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toolbar;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
@@ -27,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
         inputLayoutNome = findViewById(R.id.textInputLayoutNome);
         inputLayoutTelefone = findViewById(R.id.textInputLayoutTelefone);
         botaoAdd = findViewById(R.id.floatingActionButtonAdd);
+
+        ActionBar actionbar = getSupportActionBar();
+        actionbar.setTitle("sobre");
+        actionbar.setDisplayShowHomeEnabled(true);
+        actionbar.setDisplayHomeAsUpEnabled(true);
 
         botaoAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,5 +73,14 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

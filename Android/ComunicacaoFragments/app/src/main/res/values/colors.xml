@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorTela">#A278EB</color>
+    <color name="colorBtnAndroid">#1F8122</color>
+    <color name="colorABtnIOS">#102F7A</color>
+    <color name="colorBranco">#FFFF</color>
+</resources>

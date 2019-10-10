@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Digital House Foods</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">LOG IN</string>
+    <string name="or">-------- OR --------</string>
+    <string name="register">REGISTER</string>
+    <string name="name">Name</string>
+    <string name="repeate_passaword">Repeate Passaword</string>
+    <string name="RegisterToolbar">Register</string>
+    <string name="toolbarLogin">Digital House Foods</string>
+    <string name="toolbar_Home">Digital House Foods</string>
+</resources>

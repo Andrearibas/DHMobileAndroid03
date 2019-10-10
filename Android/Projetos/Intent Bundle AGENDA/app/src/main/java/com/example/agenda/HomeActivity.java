@@ -40,6 +40,7 @@ public class HomeActivity extends AppCompatActivity {
             String telefone = bundle.getString(TELEFONE_KEY);
 
             textViewNome.setText(nome);
+            //textViewNome.setVisibility(View.GONE);
             textViewTelefone.setText(telefone);
 
         }else   {
