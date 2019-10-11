@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.digitalhousefoods.R;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class LoginActivity extends AppCompatActivity {
@@ -36,14 +37,15 @@ public class LoginActivity extends AppCompatActivity {
                 txtEmail.setError(null);
                 txtPassword.setError(null);
 
-                if (txtEmail.getEditText().getText().toString().equals(" ")){
-                    txtEmail.setError("Digite seu email!");
-                }else if (txtPassword.getEditText().getText().toString().equals(" ")){
-                    txtPassword.setError("Digite sua senha!");
-                }else {
+                if (txtEmail.getEditText().getText().toString().equals("")){
+                    txtEmail.setError("Campo Obrigatório.");
+                } else if (txtPassword.getEditText().getText().toString().equals("")){
+                    txtPassword.setError("Campo Obrigatório.");
+                } else {
                     startActivity(new Intent(LoginActivity.this,HomeActivity.class));
                 }
             }
+
         });
 
     }
