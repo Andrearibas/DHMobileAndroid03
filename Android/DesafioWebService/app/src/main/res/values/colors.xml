@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="corPadrao">#EA2427</color>
+    <color name="corBarra">#BB1C1F</color>
+    <color name="corPreta">#000000</color>
+    <color name="corFundoTela">#00162C</color>
+    <color name="corBranca">#FFFFFF</color>
+</resources>

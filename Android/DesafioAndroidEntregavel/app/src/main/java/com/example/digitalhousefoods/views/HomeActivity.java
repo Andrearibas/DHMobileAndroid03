@@ -35,6 +35,8 @@ public class HomeActivity extends AppCompatActivity implements RecyclerViewOnCli
         recyclerView = findViewById(R.id.recyclerViewRestaurantes);
 
         homeAdapter = new HomeAdapter(getRestaurantes(),this);
+
+
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setAdapter(homeAdapter);
         recyclerView.setLayoutManager(layoutManager);
@@ -47,6 +49,7 @@ public class HomeActivity extends AppCompatActivity implements RecyclerViewOnCli
         HomeAdapter homeAdapter = new HomeAdapter(getRestaurantes(),this);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setAdapter(homeAdapter);
+
         recyclerView.setLayoutManager(layoutManager);
     }
 
