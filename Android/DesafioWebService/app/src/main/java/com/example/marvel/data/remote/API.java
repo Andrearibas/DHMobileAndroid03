@@ -13,8 +13,7 @@ public interface API {
             @Query("format") String format,
             @Query("formatType") String formatType,
             @Query("noVariants") boolean noVariants,
-            @Query("orderBy") String orderBy,
             @Query("ts") String ts,
             @Query("hash") String hash,
-            @Query("apikey") String apikey);
+            @Query("apikey") int apikey);
 }

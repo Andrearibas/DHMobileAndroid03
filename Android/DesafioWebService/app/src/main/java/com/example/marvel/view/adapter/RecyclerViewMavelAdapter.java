@@ -10,13 +10,15 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.marvel.R;
-import com.example.marvel.model.pojo.ComicResponse;
 import com.example.marvel.model.pojo.Result;
-import com.example.marvel.view.OnClick;
+import com.example.marvel.view.activity.HomeActivity;
+import com.example.marvel.view.interfacee.OnClick;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
 public class RecyclerViewMavelAdapter extends RecyclerView.Adapter<RecyclerViewMavelAdapter.ViewHolder> {
+
     private List<Result> listaMarvel;
     private OnClick listener;
 
@@ -27,20 +29,28 @@ public class RecyclerViewMavelAdapter extends RecyclerView.Adapter<RecyclerViewM
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public RecyclerViewMavelAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recycler_view, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull RecyclerViewMavelAdapter.ViewHolder holder, int position) {
+        final Result result = listaMarvel.get(position);
+        holder.onBind(result);
 
-
+        holder.itemView.setOnClickListener(v-> listener.OnClick(result));
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return listaMarvel.size();
+    }
+
+    public void atualizalista(List<Result> resultList) {
+        this.listaMarvel.clear();
+        this.listaMarvel = resultList;
+        notifyDataSetChanged();
     }
 
 
@@ -53,6 +63,13 @@ public class RecyclerViewMavelAdapter extends RecyclerView.Adapter<RecyclerViewM
             super(itemView);
             imageView = itemView.findViewById(R.id.imageViewItemRecycler);
             textView = itemView.findViewById(R.id.textviewCodSerie);
+        }
+
+        public void onBind(Result result) {
+
+            Picasso.get().load(result.getThumbnail().getPath() + ".jpg").into(imageView);
+            textView.setText(result.getTitle());
+
         }
     }
 }

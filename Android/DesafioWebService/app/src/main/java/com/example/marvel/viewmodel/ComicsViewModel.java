@@ -16,6 +16,7 @@ import com.example.marvel.repository.MarvelRepository;
 
 import java.util.List;
 
+import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
@@ -32,9 +33,6 @@ public class ComicsViewModel extends AndroidViewModel {
     public static final String PUBLIC_KEY​ = "6eb7e8896ec5850c52515a8a23ee97f0";
     public static final String PRIVATE_KEY = "0dd0c16fedb8a02985977eafca66b49f5e6a526f";
 
-    String ts = Long.toString(System.currentTimeMillis()/1000);
-
-    String hash =  md5(ts+PRIVATE_KEY+PUBLIC_KEY​);
 
     public ComicsViewModel(@NonNull Application application) {
         super(application);
@@ -44,26 +42,22 @@ public class ComicsViewModel extends AndroidViewModel {
         return this.listaMarvel;
     }
 
-    public LiveData<Boolean> getLoading() {
+    public MutableLiveData<Boolean> loading() {
         return this.loading;
     }
 
     public void getComics(){
         disposable.add(
-                RetrofitService.getApiService().getComics("magazine","comic",true,"focDate",
-                        ts, hash, PUBLIC_KEY​)
-                .subscribeOn(Schedulers.newThread())
-                .observeOn(AndroidSchedulers.mainThread())
-                .doOnSubscribe(new Consumer<Disposable>() {
-                    @Override
-                    public void accept(Disposable disposable) throws Exception {
-                        loading.setValue(true);
-                    }
-                })
-                .doOnTerminate(()-> loading.setValue(false))
-                .subscribe(comicResponse -> comicResponse.getData().getResults(), throwable -> {
-                    Log.i("LOG", "ERRO: " + throwable.getMessage());
-                        })
+                repository.getMarvel()
+                        .subscribeOn(Schedulers.io())
+                        .observeOn(AndroidSchedulers.mainThread())
+                        .doOnSubscribe(disposable1 -> loading.setValue(true))
+                        .doOnTerminate(() -> loading.setValue(false))
+                        .flatMap(comicsResponse -> Observable.just(comicsResponse.getData().getResults()))
+                        .subscribe(resultlist -> listaMarvel.setValue(resultlist),
+                                throwable -> {
+                                    Log.i("LOG", "erro" + throwable.getMessage());
+                                })
         );
 
     }

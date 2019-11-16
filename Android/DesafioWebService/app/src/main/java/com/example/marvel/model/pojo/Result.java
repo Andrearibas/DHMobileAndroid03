@@ -1,19 +1,23 @@
 
 package com.example.marvel.model.pojo;
 
-import java.util.List;
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.google.gson.annotations.Expose;
 
+import java.util.Collection;
+import java.util.List;
 
 @SuppressWarnings("unused")
-public class Result {
+public class Result implements Parcelable {
 
     @Expose
     private Characters characters;
     @Expose
-    private List<Object> collectedIssues;
+    private List<CollectedIssue> collectedIssues;
     @Expose
-    private List<Object> collections;
+    private List<Collection> collections;
     @Expose
     private Creators creators;
     @Expose
@@ -23,7 +27,7 @@ public class Result {
     @Expose
     private String diamondCode;
     @Expose
-    private Long digitalId;
+    private String digitalId;
     @Expose
     private String ean;
     @Expose
@@ -31,7 +35,7 @@ public class Result {
     @Expose
     private String format;
     @Expose
-    private Long id;
+    private String id;
     @Expose
     private List<Image> images;
     @Expose
@@ -39,11 +43,11 @@ public class Result {
     @Expose
     private String issn;
     @Expose
-    private Long issueNumber;
+    private String issueNumber;
     @Expose
     private String modified;
     @Expose
-    private Long pageCount;
+    private String pageCount;
     @Expose
     private List<Price> prices;
     @Expose
@@ -65,7 +69,40 @@ public class Result {
     @Expose
     private String variantDescription;
     @Expose
-    private List<Object> variants;
+    private List<Variant> variants;
+
+    protected Result(Parcel in) {
+        dates = in.createTypedArrayList(Date.CREATOR);
+        description = in.readString();
+        diamondCode = in.readString();
+        digitalId = in.readString();
+        ean = in.readString();
+        format = in.readString();
+        id = in.readString();
+        isbn = in.readString();
+        issn = in.readString();
+        issueNumber = in.readString();
+        modified = in.readString();
+        pageCount = in.readString();
+        prices = in.createTypedArrayList(Price.CREATOR);
+        resourceURI = in.readString();
+        thumbnail = in.readParcelable(Thumbnail.class.getClassLoader());
+        title = in.readString();
+        upc = in.readString();
+        variantDescription = in.readString();
+    }
+
+    public static final Creator<Result> CREATOR = new Creator<Result>() {
+        @Override
+        public Result createFromParcel(Parcel in) {
+            return new Result(in);
+        }
+
+        @Override
+        public Result[] newArray(int size) {
+            return new Result[size];
+        }
+    };
 
     public Characters getCharacters() {
         return characters;
@@ -75,19 +112,19 @@ public class Result {
         this.characters = characters;
     }
 
-    public List<Object> getCollectedIssues() {
+    public List<CollectedIssue> getCollectedIssues() {
         return collectedIssues;
     }
 
-    public void setCollectedIssues(List<Object> collectedIssues) {
+    public void setCollectedIssues(List<CollectedIssue> collectedIssues) {
         this.collectedIssues = collectedIssues;
     }
 
-    public List<Object> getCollections() {
+    public List<Collection> getCollections() {
         return collections;
     }
 
-    public void setCollections(List<Object> collections) {
+    public void setCollections(List<Collection> collections) {
         this.collections = collections;
     }
 
@@ -123,11 +160,11 @@ public class Result {
         this.diamondCode = diamondCode;
     }
 
-    public Long getDigitalId() {
+    public String getDigitalId() {
         return digitalId;
     }
 
-    public void setDigitalId(Long digitalId) {
+    public void setDigitalId(String digitalId) {
         this.digitalId = digitalId;
     }
 
@@ -155,11 +192,11 @@ public class Result {
         this.format = format;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -187,11 +224,11 @@ public class Result {
         this.issn = issn;
     }
 
-    public Long getIssueNumber() {
+    public String getIssueNumber() {
         return issueNumber;
     }
 
-    public void setIssueNumber(Long issueNumber) {
+    public void setIssueNumber(String issueNumber) {
         this.issueNumber = issueNumber;
     }
 
@@ -203,11 +240,11 @@ public class Result {
         this.modified = modified;
     }
 
-    public Long getPageCount() {
+    public String getPageCount() {
         return pageCount;
     }
 
-    public void setPageCount(Long pageCount) {
+    public void setPageCount(String pageCount) {
         this.pageCount = pageCount;
     }
 
@@ -291,12 +328,39 @@ public class Result {
         this.variantDescription = variantDescription;
     }
 
-    public List<Object> getVariants() {
+    public List<Variant> getVariants() {
         return variants;
     }
 
-    public void setVariants(List<Object> variants) {
+    public void setVariants(List<Variant> variants) {
         this.variants = variants;
     }
 
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeTypedList(dates);
+        dest.writeString(description);
+        dest.writeString(diamondCode);
+        dest.writeString(digitalId);
+        dest.writeString(ean);
+        dest.writeString(format);
+        dest.writeString(id);
+        dest.writeString(isbn);
+        dest.writeString(issn);
+        dest.writeString(issueNumber);
+        dest.writeString(modified);
+        dest.writeString(pageCount);
+        dest.writeTypedList(prices);
+        dest.writeString(resourceURI);
+        dest.writeParcelable(thumbnail, flags);
+        dest.writeString(title);
+        dest.writeString(upc);
+        dest.writeString(variantDescription);
+    }
 }
