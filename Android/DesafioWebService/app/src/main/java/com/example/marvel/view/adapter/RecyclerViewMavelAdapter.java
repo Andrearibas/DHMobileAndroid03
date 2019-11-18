@@ -39,7 +39,7 @@ public class RecyclerViewMavelAdapter extends RecyclerView.Adapter<RecyclerViewM
         final Result result = listaMarvel.get(position);
         holder.onBind(result);
 
-        holder.itemView.setOnClickListener(v-> listener.OnClick(result));
+        holder.itemView.setOnClickListener(v -> listener.OnClick(result));
     }
 
     @Override
@@ -61,7 +61,7 @@ public class RecyclerViewMavelAdapter extends RecyclerView.Adapter<RecyclerViewM
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.imageViewItemRecycler);
+            imageView = itemView.findViewById(R.id.imageViewItemRecycler2);
             textView = itemView.findViewById(R.id.textviewCodSerie);
         }
 

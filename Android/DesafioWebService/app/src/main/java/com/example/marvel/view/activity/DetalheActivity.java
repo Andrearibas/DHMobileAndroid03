@@ -2,7 +2,6 @@ package com.example.marvel.view.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -10,13 +9,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.marvel.R;
 import com.example.marvel.model.pojo.Result;
-import com.example.marvel.view.interfacee.OnClick;
 import com.example.marvel.view.interfacee.OnClickImage;
 import com.squareup.picasso.Picasso;
 
 import static com.example.marvel.view.activity.HomeActivity.RESULT_KEY;
 
-public class DetalheActivity extends AppCompatActivity implements OnClick {
+public class DetalheActivity extends AppCompatActivity implements OnClickImage {
     private ImageView ivDetalheFundo, ivDetalheFrente;
     private TextView tvDetalheTitulo, tvDetalheDescricao, tvDetalhePublicacao, tvDetalhePreco, tvDetalhePagina;
 
@@ -31,7 +29,7 @@ public class DetalheActivity extends AppCompatActivity implements OnClick {
 
         if (getIntent() != null && getIntent().getExtras() != null) {
 
-            Result result = getIntent().getExtras().getParcelable(RESULT_KEY);
+            Result result = getIntent().getParcelableExtra(RESULT_KEY);
 
             Picasso.get().load(result.getThumbnail().getPath() + ".jpg").into(ivDetalheFrente);
             Picasso.get().load(result.getThumbnail().getPath() + ".jpg").into(ivDetalheFundo);
@@ -40,18 +38,21 @@ public class DetalheActivity extends AppCompatActivity implements OnClick {
             tvDetalheDescricao.setText(result.getDescription());
 
 
-            tvDetalhePublicacao.setText(result.getDates().get(0).getDate());
+            String dataForm = result.getDates().get(0).getDate().split("T")[0];
+            String[] listDate = dataForm.split("-");
+            String dataPublicacao = listDate[2] + "/" + listDate[1] + "/" + listDate[0];
+            tvDetalhePublicacao.setText("Published: " + dataPublicacao);
 
 
-            //tvDetalhePreco.setText(result.getPrices().get(0).getPrice());
-            //tvDetalhePagina.setText(result.getPageCount());
+            tvDetalhePreco.setText("Price: $ "+result.getPrices().get(0).getPrice());
+
+            tvDetalhePagina.setText("Pages: " + result.getPageCount().toString());
 
 
             ivDetalheFrente.setOnClickListener(v -> {
                 Intent intent = new Intent(DetalheActivity.this, DetalheImageActivity.class);
-                intent.putExtra(DETAILSIMAGE_KEY, (Parcelable) result);
+                intent.putExtra(DETAILSIMAGE_KEY, result);
                 startActivity(intent);
-
             });
 
         }
@@ -74,10 +75,10 @@ public class DetalheActivity extends AppCompatActivity implements OnClick {
     }
 
     @Override
-    public void OnClick(Result result) {
+    public void OnclickImage(Result result) {
         Intent intent = new Intent(this, DetalheImageActivity.class);
         Bundle bundle = new Bundle();
-        bundle.putParcelable(RESULT_KEY, (Parcelable) result);
+        bundle.putParcelable(RESULT_KEY, result);
         intent.putExtras(bundle);
         startActivity(intent);
         finish();

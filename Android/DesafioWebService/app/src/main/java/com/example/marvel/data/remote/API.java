@@ -15,5 +15,5 @@ public interface API {
             @Query("noVariants") boolean noVariants,
             @Query("ts") String ts,
             @Query("hash") String hash,
-            @Query("apikey") int apikey);
+            @Query("apikey") String apikey);
 }

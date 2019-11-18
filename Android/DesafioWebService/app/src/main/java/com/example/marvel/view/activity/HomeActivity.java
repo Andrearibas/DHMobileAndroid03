@@ -66,7 +66,7 @@ public class HomeActivity extends AppCompatActivity implements OnClick {
     public void OnClick(Result result) {
         Intent intent = new Intent(this, DetalheActivity.class);
         Bundle bundle = new Bundle();
-        bundle.putParcelable(RESULT_KEY, (Parcelable) result);
+        bundle.putParcelable(RESULT_KEY, result);
         intent.putExtras(bundle);
         startActivity(intent);
 

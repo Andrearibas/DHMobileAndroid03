@@ -3,16 +3,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/corFundoTela"
+    android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/imageViewItemRecycler"
+        android:id="@+id/imageViewItemRecycler2"
         android:layout_width="129dp"
         android:layout_height="182dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -22,11 +24,11 @@
         android:id="@+id/textviewCodSerie"
         android:layout_width="126dp"
         android:layout_height="19dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:text="CodSerie"
+        android:textColor="@color/corBranca"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewItemRecycler" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewItemRecycler2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

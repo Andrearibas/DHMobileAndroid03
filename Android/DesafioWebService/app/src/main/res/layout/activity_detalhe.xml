@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/corFundoTela"
     tools:context=".view.activity.DetalheActivity">
 
 
@@ -39,6 +40,7 @@
         android:layout_marginRight="8dp"
         android:gravity="center"
         android:text="TITULO"
+        android:textColor="@color/corBranca"
         android:textAllCaps="true"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -56,6 +58,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Descriçao do Filme"
+        android:textColor="@color/corBranca"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,6 +74,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Publicação:"
+        android:textColor="@color/corBranca"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,6 +90,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Preço:"
+        android:textColor="@color/corBranca"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewDataPublicacao" />
@@ -100,6 +105,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Pagina:"
+        android:textColor="@color/corBranca"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewPreco" />

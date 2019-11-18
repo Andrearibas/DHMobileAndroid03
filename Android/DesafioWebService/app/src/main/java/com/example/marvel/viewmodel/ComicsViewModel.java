@@ -30,7 +30,7 @@ public class ComicsViewModel extends AndroidViewModel {
     private MutableLiveData<Boolean> loading = new MutableLiveData<>();
     private CompositeDisposable disposable = new CompositeDisposable();
     private MarvelRepository repository = new MarvelRepository();
-    public static final String PUBLIC_KEY​ = "6eb7e8896ec5850c52515a8a23ee97f0";
+
     public static final String PRIVATE_KEY = "0dd0c16fedb8a02985977eafca66b49f5e6a526f";
 
 
@@ -54,7 +54,8 @@ public class ComicsViewModel extends AndroidViewModel {
                         .doOnSubscribe(disposable1 -> loading.setValue(true))
                         .doOnTerminate(() -> loading.setValue(false))
                         .flatMap(comicsResponse -> Observable.just(comicsResponse.getData().getResults()))
-                        .subscribe(resultlist -> listaMarvel.setValue(resultlist),
+                        .subscribe(resultlist ->
+                                        listaMarvel.setValue(resultlist),
                                 throwable -> {
                                     Log.i("LOG", "erro" + throwable.getMessage());
                                 })
